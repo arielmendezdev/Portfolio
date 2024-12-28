@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export default function RootLayout({ children }) {
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "light" : "dark";

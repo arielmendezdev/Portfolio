@@ -19,7 +19,6 @@ import { useState } from "react";
 import "../app/globals.css";
 
 export default function NavBar({ theme, toggleTheme }) {
-  const [themeDark, setThemeDark] = useState(false);
 
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -30,15 +29,11 @@ export default function NavBar({ theme, toggleTheme }) {
     setAnchorEl(null);
   };
 
-  const handleChangeTheme = () => {
-    setThemeDark(!themeDark);
-  };
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{ background: "transparent" }}>
         <Toolbar
-          className="navbar"
+          className={theme}
           sx={{
             display: "flex",
             justifyContent: "space-between",

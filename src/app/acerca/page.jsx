@@ -58,6 +58,7 @@ export default function Acerca() {
           { lenguajes.map((lenguaje, index) => {
             return (
               <Chip
+                sx={{ ":hover": { background: "#dcdcdc" } }}
                 className="custom-link"
                 label={lenguaje}
                 variant="outlined"

@@ -11,3 +11,48 @@ body {
     padding-bottom: 9em;
 }
 
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark {
+    --link-background-color: #121212;
+    --link-color: #fff;
+}
+
+.light {
+    --link-background-color: #f5f5f5;
+    --link-color: #000;
+}
+
+.custom-link {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.iconBar.dark {
+    background-color: #121212;
+    color: #fff;
+}
+
+.iconBar.light {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.navbar.dark {
+    background-color: #121212;
+    color: #fff;
+}
+
+.navbar.light {
+    background-color: #f5f5f5;
+    color: #000;
+}

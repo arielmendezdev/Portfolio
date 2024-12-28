@@ -38,8 +38,6 @@ export default function Acerca() {
             mantenerme al día de las últimas tendencias del sector
             actualizándome para desarrollarme y crecer profesionalmente. Tengo
             capacidad para trabajar en grupo, empatía y resolución de problemas.
-            Traducción realizada con la versión gratuita del traductor
-            www.DeepL.com/Translator
           </Typography>
         </Box>
       </Box>
@@ -59,8 +57,13 @@ export default function Acerca() {
         <Box sx={{ display: 'flex', gap: 4, flexWrap: 'wrap', marginTop: 4, justifyContent: 'center' }}>
           { lenguajes.map((lenguaje, index) => {
             return (
-              <Chip label={lenguaje} variant="outlined" key={index} />
-            )
+              <Chip
+                className="custom-link"
+                label={lenguaje}
+                variant="outlined"
+                key={index}
+              />
+            );
           })}
         </Box>
         

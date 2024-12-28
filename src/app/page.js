@@ -11,16 +11,15 @@ import DialogTitle from "@mui/material/DialogTitle";
 import { useState } from "react";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
 
-   const [open, setOpen] = useState(false);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
-   const handleClickOpen = () => {
-     setOpen(true);
-   };
-
-   const handleClose = () => {
-     setOpen(false);
-   };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const handleDownload = () => {
     const filePath = "/CV.ArielMendez.pdf";
@@ -31,8 +30,8 @@ export default function Home() {
   };
 
   const handleContacto = () => {
-    setContacto(true)
-  }
+    setContacto(true);
+  };
 
   return (
     <div>
@@ -45,11 +44,16 @@ export default function Home() {
             gap: 4,
           }}
         >
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Image src={ariel} alt="Ariel Mendez" />
           </Box>
           <Box
-            sx={{ display: "flex", flexDirection: "column", gap: 4, width: { xs: '100%', md: '50%'} }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 4,
+              width: { xs: "100%", md: "50%" },
+            }}
           >
             <Typography sx={{ fontSize: 20 }}>
               ¡Bienvenido a mi portfolio! Soy un apasionado desarrollador Full
@@ -72,22 +76,20 @@ export default function Home() {
               aria-describedby="alert-dialog-description"
             >
               <DialogTitle id="alert-dialog-title">
-                {'Ariel Mendez'}
+                {"Ariel Mendez"}
               </DialogTitle>
               <DialogContent>
-                <DialogContentText id="alert-dialog-description">
-                  <Typography>
-                    Email: arielmendezdev@gmail.com
-                  </Typography>
-                  <Typography>
-                    Teléfono: +54 9 2234 461219
-                  </Typography>
+                <DialogContentText>
+                  Email: arielmendezdev@gmail.com
+                </DialogContentText>
+                <DialogContentText>
+                  Teléfono: +54 9 2234 461219
                 </DialogContentText>
               </DialogContent>
               <DialogActions>
                 <Button onClick={handleClose}>Cerrar</Button>
               </DialogActions>
-            </Dialog> 
+            </Dialog>
           </Box>
         </Box>
       </Box>

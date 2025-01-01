@@ -5,8 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Link from "next/link";
-import imagenPageCv from "../../assets/images/ImagenPageCv.png";
-import imagenGym from "../../assets/images/ImagenGym.png";
+import imagenPageCv from "@/assets/images/imagenPageCv.png";
+import imagenGym from "@/assets/images/ImagenGym.png";
 
 export default function Proyectos() {
 

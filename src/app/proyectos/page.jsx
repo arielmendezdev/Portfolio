@@ -12,7 +12,7 @@ export default function Proyectos() {
 
   const proyectos = [
     {
-      name: "Creador de CV",
+      name: "Creador de CV personalizado",
       title: "",
       to: "https://cv-ariel-blue.vercel.app",
       text: "Proyecto creado para crear currículum de una manera personalizada, cambiando colores de textos y colores de la hoja, luego se puede descargarlo en formato PDF para poder reenviarlo de forma facil y eficiente",

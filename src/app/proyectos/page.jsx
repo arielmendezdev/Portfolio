@@ -5,8 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Link from "next/link";
-import imagenPageCv from "../../assets/images/imagenPageCv.png";
-import imagenGym from "../../assets/images/imagenGym.png";
+// import imagenPageCv from "../../assets/images/imagenPageCv.png";
+// import imagenGym from "../../assets/images/imagenGym.png";
 
 export default function Proyectos() {
 
@@ -16,14 +16,14 @@ export default function Proyectos() {
       title: "",
       to: "https://cv-ariel-blue.vercel.app",
       text: "Proyecto creado para crear currículum de una manera personalizada, cambiando colores de textos y colores de la hoja, luego se puede descargarlo en formato PDF para poder reenviarlo de forma facil y eficiente",
-      img: imagenPageCv,
+      // img: imagenPageCv,
     },
     {
       name: "Gimnasio KingGym",
       title: "",
       to: "https://rutinas-five.vercel.app",
       text: "Proyecto para rutinas de gimnasio, en el cual se puede dividir ejercicios por días, y armar un proceso de entrenamiento mas ajustable a las necesidades del alumno.",
-      img: imagenGym,
+      // img: imagenGym,
     },
   ];
 
@@ -33,7 +33,7 @@ export default function Proyectos() {
         return (
           <Card key={index} className="flex">
             <CardContent>
-              <Image src={proyect.img} alt="image"/>
+              {/* <Image src={proyect.img} alt="image"/> */}
             </CardContent>
             <CardContent>
               <Typography variant="h4">{proyect.name}</Typography>

@@ -8,6 +8,7 @@ import Link from "next/link";
 import imagenPageCv from "@/assets/images/imagenPageCv.png";
 import imagenGym from "@/assets/images/ImagenGym.png";
 
+
 export default function Proyectos() {
 
   const proyectos = [

@@ -116,9 +116,11 @@ export default function NavBar({ theme, toggleTheme }) {
                 <LinkedInIcon className="custom-link" />
               </IconButton>
             </Link>
-            <IconButton className="custom-link" onClick={toggleTheme}>
-              {theme == "dark" ? <WbSunnyIcon /> : <NightsStayIcon />}
-            </IconButton>
+            <Link href='#'>
+              <IconButton className="custom-link" onClick={toggleTheme}>
+                {theme == "dark" ? <WbSunnyIcon /> : <NightsStayIcon />}
+              </IconButton>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
